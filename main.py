@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 intents = discord.Intents.default()
-client = commands.Bot(command_prefix="sudo ")
+client = commands.Bot(command_prefix="sudo ", intents = intents)
 
 @client.event
 async def on_ready():
