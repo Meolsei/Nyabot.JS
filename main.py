@@ -5,8 +5,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-intents = discord.Intents.default()
-client = commands.Bot(command_prefix="sudo ", intents = intents)
+intents = discord.Intents().all()
+client = commands.Bot(intents=intents, command_prefix="sudo ")
 
 @client.event
 async def on_ready():

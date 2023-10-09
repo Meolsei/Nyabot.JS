@@ -7,7 +7,7 @@ class nsfw(commands.Cog):
 
     @commands.command()
     async def ping(self, ctx):
-        await ctx.send(f"Bot ping is {self.latency}.")
+        await ctx.send(f"Bot ping is {round(self.bot.latency * 1000)}ms.")
 
 async def setup(bot):
-    bot.add_command(nsfw)
+    await bot.add_cog(nsfw(bot))
