@@ -2,7 +2,8 @@
     "name": "nyabot.js",
     "version": "1.0",
     "dependencies": {
-        "eris": ""
+        "eris": "",
+        "dotenv": ""
     },
     "repository": {
         "type": "git",
